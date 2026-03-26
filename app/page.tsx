@@ -125,12 +125,14 @@ export default function HomePage() {
       {/* ── CTA Banner ────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 md:px-8 lg:px-12 pb-16 md:pb-28">
         <div className="relative rounded-3xl overflow-hidden">
-          <Image
-            src="/logo6.png"
-            alt="Come hungry"
-            fill
-            className="object-contain scale-50"
-          />
+          <div className="hidden md:block">
+            <Image
+              src="/logo6.png"
+              alt="Come hungry"
+              fill
+              className="object-contain scale-50"
+            />
+          </div>
           <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-black/40" />
           <div className="relative z-10 px-8 md:px-14 py-16 md:py-24 flex flex-col md:flex-row items-start md:items-center justify-between gap-8">
             <div>
