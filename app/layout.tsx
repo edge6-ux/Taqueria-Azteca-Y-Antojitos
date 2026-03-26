@@ -26,6 +26,17 @@ const bebas = Bebas_Neue({
 export const metadata: Metadata = {
   title: "Taqueria Azteca",
   description: "Authentic Mexican food — tacos, burritos, quesadillas, and more.",
+  openGraph: {
+    title: "Taqueria Azteca",
+    description: "Authentic Mexican food — tacos, burritos, quesadillas, and more.",
+    images: [{ url: "/thumb.png" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Taqueria Azteca",
+    description: "Authentic Mexican food — tacos, burritos, quesadillas, and more.",
+    images: ["/thumb.png"],
+  },
 };
 
 export default function RootLayout({
