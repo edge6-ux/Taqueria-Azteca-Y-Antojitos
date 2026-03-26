@@ -29,13 +29,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Taqueria Azteca",
     description: "Authentic Mexican food — tacos, burritos, quesadillas, and more.",
-    images: [{ url: "/thumb.png" }],
+    images: [{ url: "/thumb2.png" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Taqueria Azteca",
     description: "Authentic Mexican food — tacos, burritos, quesadillas, and more.",
-    images: ["/thumb.png"],
+    images: ["/thumb2.png"],
   },
 };
 
