@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 122" role="img" aria-label="Taqueria Azteca y Antojitos">
+  <defs>
+    <clipPath id="logoIconClip">
+      <circle cx="61" cy="61" r="50"/>
+    </clipPath>
+  </defs>
+
+  <!-- ══════════════════════════════════════
+       ICON — Aztec Face Emblem
+  ══════════════════════════════════════ -->
+
+  <!-- Outer black ring -->
+  <circle cx="61" cy="61" r="59" fill="#000000"/>
+  <!-- Inner teal fill -->
+  <circle cx="61" cy="61" r="50" fill="#1fa39e"/>
+
+  <g clip-path="url(#logoIconClip)">
+
+    <!-- ── Headdress teeth (alternating white / black) ── -->
+    <!-- Outer-left  (white)  -->
+    <rect x="27" y="24" width="12" height="14" fill="#ffffff"/>
+    <!-- Inner-left  (black)  -->
+    <rect x="41" y="19" width="12" height="19" fill="#000000"/>
+    <!-- Center      (white, tallest) -->
+    <rect x="55" y="12" width="12" height="26" fill="#ffffff"/>
+    <!-- Inner-right (black)  -->
+    <rect x="69" y="19" width="12" height="19" fill="#000000"/>
+    <!-- Outer-right (white)  -->
+    <rect x="83" y="24" width="12" height="14" fill="#ffffff"/>
+
+    <!-- Headdress base bar -->
+    <rect x="24" y="38" width="74" height="6" fill="#000000"/>
+
+    <!-- Brow separator (deep teal) -->
+    <rect x="24" y="44" width="74" height="5" fill="#0f5f5a"/>
+
+    <!-- ── Eyes ── -->
+    <rect x="28" y="52" width="19" height="13" fill="#ffffff"/>
+    <rect x="75" y="52" width="19" height="13" fill="#ffffff"/>
+
+    <!-- ── Nose block with teal nostril cutouts ── -->
+    <rect x="47" y="67" width="28" height="14" fill="#ffffff"/>
+    <rect x="48" y="73" width="9"  height="7"  fill="#1fa39e"/>
+    <rect x="65" y="73" width="9"  height="7"  fill="#1fa39e"/>
+
+    <!-- ── Mouth with stepped corners ── -->
+    <!-- Left outer step -->
+    <rect x="24" y="84" width="8"  height="4"  fill="#ffffff"/>
+    <!-- Left inner step -->
+    <rect x="30" y="82" width="8"  height="8"  fill="#ffffff"/>
+    <!-- Main bar -->
+    <rect x="36" y="80" width="50" height="10" fill="#ffffff"/>
+    <!-- Right inner step -->
+    <rect x="84" y="82" width="8"  height="8"  fill="#ffffff"/>
+    <!-- Right outer step -->
+    <rect x="90" y="84" width="8"  height="4"  fill="#ffffff"/>
+
+    <!-- ── Chin accent (deep teal shadow) ── -->
+    <rect x="40" y="92" width="42" height="7" fill="#0f5f5a"/>
+
+  </g>
+
+  <!-- ══════════════════════════════════════
+       TEXT BLOCK
+  ══════════════════════════════════════ -->
+  <g transform="translate(137, 0)">
+
+    <!-- TAQUERIA -->
+    <text
+      x="0" y="36"
+      font-family="'Arial Black','Franklin Gothic Heavy','Impact',sans-serif"
+      font-size="20"
+      font-weight="800"
+      fill="#000000"
+      letter-spacing="4">TAQUERIA</text>
+
+    <!-- AZTECA -->
+    <text
+      x="-2" y="80"
+      font-family="'Arial Black','Franklin Gothic Heavy','Impact',sans-serif"
+      font-size="42"
+      font-weight="900"
+      fill="#000000"
+      letter-spacing="2">AZTECA</text>
+
+    <!-- Teal rule between AZTECA and Y ANTOJITOS -->
+    <rect x="0" y="87" width="210" height="2" fill="#1fa39e"/>
+
+    <!-- Y ANTOJITOS -->
+    <text
+      x="0" y="106"
+      font-family="'Arial Narrow','Arial','Helvetica Neue',sans-serif"
+      font-size="15"
+      font-weight="600"
+      fill="#000000"
+      letter-spacing="5">Y ANTOJITOS</text>
+
+  </g>
+</svg>
