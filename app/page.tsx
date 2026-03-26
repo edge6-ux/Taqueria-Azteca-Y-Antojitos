@@ -109,6 +109,16 @@ export default function HomePage() {
               </div>
             )
           )}
+          {/* Mobile-only 4th image for even 2x2 grid */}
+          <div className="relative h-52 rounded-2xl overflow-hidden group block md:hidden">
+            <Image
+              src="/tostada.png"
+              alt="Tostada"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-700"
+            />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+          </div>
         </div>
       </section>
 
@@ -131,9 +141,6 @@ export default function HomePage() {
                 Come hungry.<br />
                 <span className="text-[#1fa39e]">Leave happy.</span>
               </h3>
-              <p className="text-white/55 font-sans text-sm md:text-base mt-4 max-w-sm">
-                No ordering apps required. Just authentic flavors, every single day.
-              </p>
             </div>
             <div className="flex gap-4 flex-wrap shrink-0">
               <Link
