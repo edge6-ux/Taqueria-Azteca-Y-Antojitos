@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -12,21 +12,12 @@ const links = [
 ];
 
 export default function Navbar() {
-  const [open, setOpen]         = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-  const pathname                = usePathname();
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  const [open, setOpen] = useState(false);
+  const pathname        = usePathname();
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled ? "bg-black/95 backdrop-blur-md border-b border-white/[0.06] py-0" : "bg-transparent py-0"
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-black border-b border-white/[0.06]"
     >
       {/* Teal top accent line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#1fa39e]" />
