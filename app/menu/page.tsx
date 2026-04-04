@@ -103,7 +103,7 @@ export default function MenuPage() {
             {/* Items */}
             <div className="flex flex-col divide-y divide-white/[0.06]">
               {cat.items.map((item) => (
-                <div key={item.name} className="flex items-start justify-between gap-8 py-5 group">
+                <div key={item.name} className="flex items-start justify-between gap-4 md:gap-8 py-5 group">
                   <div className="flex flex-col gap-1.5">
                     <span className="text-white font-sans font-semibold text-[15px] leading-snug group-hover:text-white transition-colors">
                       {item.name}

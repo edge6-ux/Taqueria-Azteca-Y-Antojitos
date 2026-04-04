@@ -90,15 +90,17 @@ export default function LocationsPage() {
         </div>
 
         {/* Image + social banner */}
-        <div className="mt-8 relative rounded-2xl overflow-hidden h-56 md:h-72">
-          <Image
-            src="/hero4.jpg"
-            alt="Taqueria Azteca"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
-          <div className="absolute inset-0 flex flex-col md:flex-row items-center justify-between px-8 md:px-12 gap-5">
+        <div className="mt-8 relative rounded-2xl overflow-hidden">
+          <div className="absolute inset-0">
+            <Image
+              src="/hero4.jpg"
+              alt="Taqueria Azteca"
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20" />
+          </div>
+          <div className="relative z-10 flex flex-col md:flex-row items-start md:items-center justify-between px-8 md:px-12 py-10 md:py-0 md:h-72 gap-6">
             <div>
               <p className="text-white font-serif font-bold text-xl md:text-2xl">
                 Always know where we&apos;re at

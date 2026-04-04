@@ -14,8 +14,8 @@ export default function HomePage() {
           priority
           className="object-cover"
         />
-        {/* Gradient: heavy left + bottom fade */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-black/10" />
+        {/* Gradient: heavy left + bottom fade (stronger on mobile for readability) */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/75 to-black/40 md:from-black/90 md:via-black/50 md:to-black/10" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
 
         {/* Bottom-left text block */}
@@ -120,16 +120,21 @@ export default function HomePage() {
               </div>
             </Link>
           ))}
-          {/* Mobile-only 4th image for even 2x2 grid */}
-          <div className="relative h-52 rounded-2xl overflow-hidden group block md:hidden">
-            <Image
-              src="/tostada.png"
-              alt="Tostada"
-              fill
-              className="object-cover group-hover:scale-105 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
-          </div>
+          {/* Mobile-only 4th card for even 2x2 grid */}
+          <Link href="/menu" className="group block overflow-hidden rounded-2xl md:hidden">
+            <div className="relative h-52 overflow-hidden">
+              <Image
+                src="/tostada.png"
+                alt="Tostada"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300" />
+            </div>
+            <div className="bg-white/[0.04] border-x border-b border-white/[0.08] px-4 py-4">
+              <h3 className="text-white font-serif font-bold text-base">Tortas</h3>
+            </div>
+          </Link>
         </div>
       </section>
 
