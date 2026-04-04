@@ -22,14 +22,14 @@ export default function Navbar() {
       {/* Teal top accent line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-[#1fa39e]" />
 
-      <div className="max-w-7xl mx-auto px-6 md:px-10 flex items-center justify-between h-[72px]">
+      <div className="max-w-7xl mx-auto px-5 md:px-8 flex items-center justify-between h-[56px]">
 
         {/* Brand */}
         <Link href="/" className="shrink-0 flex flex-col leading-none group">
-          <span className="text-white uppercase tracking-[0.18em] text-[18px] transition-all duration-300 group-hover:[text-shadow:0_0_12px_rgba(31,163,158,0.9),0_0_30px_rgba(31,163,158,0.5)]" style={{ fontFamily: "var(--font-bebas)" }}>
+          <span className="text-white uppercase tracking-[0.18em] text-[15px] transition-all duration-300 group-hover:[text-shadow:0_0_12px_rgba(31,163,158,0.9),0_0_30px_rgba(31,163,158,0.5)]" style={{ fontFamily: "var(--font-bebas)" }}>
             Taqueria Azteca
           </span>
-          <span className="text-[#1fa39e] uppercase tracking-[0.22em] text-[11px] mt-0.5 transition-all duration-300 group-hover:[text-shadow:0_0_10px_rgba(31,163,158,1),0_0_24px_rgba(31,163,158,0.6)]" style={{ fontFamily: "var(--font-bebas)" }}>
+          <span className="text-[#1fa39e] uppercase tracking-[0.22em] text-[9px] mt-0.5 transition-all duration-300 group-hover:[text-shadow:0_0_10px_rgba(31,163,158,1),0_0_24px_rgba(31,163,158,0.6)]" style={{ fontFamily: "var(--font-bebas)" }}>
             Y Antojitos
           </span>
         </Link>
@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="hidden md:block shrink-0">
           <Link
             href="/contact"
-            className="text-[11px] font-sans font-bold uppercase tracking-[0.18em] bg-[#1fa39e] text-white px-6 py-2.5 rounded-full hover:bg-[#25c5bf] transition-colors duration-200"
+            className="text-[10px] font-sans font-bold uppercase tracking-[0.18em] bg-[#1fa39e] text-white px-5 py-2 rounded-full hover:bg-[#25c5bf] transition-colors duration-200"
           >
             Contact
           </Link>
